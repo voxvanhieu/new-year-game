@@ -1,0 +1,268 @@
+@font-face {
+    font-family: 'UTM Netmuc KT';
+    src: url('netmuc.ttf') format('truetype'),
+        local('UTM Netmuc KT');
+  }
+  
+body
+{
+    margin: 0;
+    padding: 0;
+    background: url("background.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+#FullScreen
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#footer
+{   display: flex;
+    align-items:center;
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+    width: 350px;
+    height: 30px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.829);
+}
+#footer span
+{
+    display: inline-block;
+    margin-left: 15px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+#footer img
+{
+    margin-left: 15px;
+    display: inline-block;
+    width: 35px;
+    height: auto;
+}
+#dracugirl, #bats, #bats2, #big-ghost, #bingo, #bingo2, #ghost, #xuong
+{
+    position: absolute;
+}
+    #dracugirl
+    {
+        width: 220px;
+        height: auto;
+        left: 170px;
+        top: 70px;
+    }
+    #bats
+    {
+        width: 210px;
+        height: auto;
+        left: 578px;
+        top: 60px;
+    }
+    #big-ghost
+    {
+        height: 130px;
+        width: auto;
+        left: 110px;
+        top: 580px;
+    }
+    #bingo, #bingo2
+    {
+        height: 250px;
+        width: auto;
+        left: 460px;
+        top: 240px;
+    }
+    #bingo2
+    {
+        left: 725px;
+    }
+    #ghost
+    {
+        width: 150px;
+        height: auto;
+        left: 250px;
+        bottom: 290px;
+    }
+    #xuong
+    {
+        width: 250px;
+        height: auto;
+        bottom: 0px;
+        right: -20px;
+        display: none;
+        z-index: 9999;
+        /* visibility: hidden; */
+    }
+    #bats2
+    {
+        top: 100px;
+        display: none;
+        /* visibility: hidden; */
+    }
+
+.horror-text {
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: flickering;
+    animation-timing-function: step-start;
+    color: #912914;
+    font-family: 'UTM Netmuc KT', 'UnifrakturCook', 'cursive';
+    font-size: 96px;
+    }
+    
+    @keyframes flickering {
+    0% {
+        color: #912914;
+        text-shadow: none;
+        transform: skewX(0);
+    }
+    5% {
+        color: #912914;
+        text-shadow: none;
+        transform: skewX(0);
+    }
+    10% {
+        color: #912914;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(-15deg);
+    }
+    15% {
+        color: #ccc;
+        text-shadow: none;
+        transform: skewX(-15deg);
+    }
+    20% {
+        color: #912914;
+        text-shadow: none;
+        transform: skewX(0);
+    }
+    25% {
+        color: #ccc;
+        text-shadow: 2px 2px #912914;
+        transform: skewX(0);
+    }
+    30% {
+        color: #ccc;
+        text-shadow: 2px 2px #912914;
+        transform: skewX(0);
+    }
+    35% {
+        color: #ccc;
+        text-shadow: 2px 2px #912914;
+        transform: skewX(0);
+    }
+    37% {
+        color: #ccc;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(0);
+    }
+    40% {
+        color: #912914;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(0);
+    }
+    45% {
+        color: #912914;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(0);
+    }
+    50% {
+        color: #912914;
+        text-shadow: none;
+        transform: skewX(0);
+    }
+    55% {
+        color: #912914;
+        text-shadow: none;
+        transform: skewX(0);
+    }
+    60% {
+        color: #912914;
+        text-shadow: none;
+        transform: skewX(0);
+    }
+    65% {
+        color: #912914;
+        text-shadow: none;
+        transform: skewX(0);
+    }
+    68% {
+        color: #912914;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(0);
+    }
+    70% {
+        color: #912914;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(0);
+    }
+    75% {
+        color: #912914;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(10deg);
+    }
+    80% {
+        color: #912914;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(10deg);
+    }
+    85% {
+        color: #912914;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(10deg);
+    }
+    90% {
+        color: #912914;
+        text-shadow: none;
+        transform: skewX(0);
+    }
+    95% {
+        color: #912914;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(0);
+    }
+    100% {
+        color: #912914;
+        text-shadow: none;
+        transform: skewX(0);
+    }
+    }
+#AppBtn
+{
+    position: absolute;
+    left: 43%;
+    top: 110px;
+    height: 120px;
+    width: 120px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: #FFF solid 3px;
+    color: #eee;
+    background-color: #912914;
+}
+#UserName
+{
+    top: 50%;
+    height: 150px;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 10px;
+    margin: 0;
+}
+.NameBox
+{
+    left: 50%;
+    top: 70%;
+    width: 950px;
+    height: 95px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.829);
+    border: #741806 solid 5px;
+    border-radius: 50px;
+    transform: translate(-50%, -50%);
+}
